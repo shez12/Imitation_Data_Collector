@@ -1,0 +1,27 @@
+"""graph TD
+    A[Start] --> B[Initialize GameUI]
+    B --> C[Display Start Game Button]
+    C --> D[User Clicks Start Game]
+    D --> E[Enter Job and Robot Name]
+    E --> F[Submit Job and Robot]
+    F --> G[Start Stage 3]
+    G --> H[Initialize Controller and Robot]
+    H --> I[Monitor Signals]
+    I --> J{Signal Received?}
+    J -->|Yes| K[Update UI and Process Input]
+    J -->|No| L{5 Second Timeout?}
+    L -->|Yes| M[Show Movement Break]
+    L -->|No| J
+    K --> N[Record Data]
+    N --> J
+    M --> O[Stop Recording]
+    O --> J
+    I --> P{Stop Button Pressed?}
+    P -->|Yes| Q[Stop All Actions]
+    Q --> R[Start Stage 4]
+    R --> S[Display Completion Message]
+    S --> T[Close Button]
+    T --> U[End]"""
+
+
+
